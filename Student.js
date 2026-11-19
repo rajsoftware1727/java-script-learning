@@ -72,4 +72,61 @@ for(let i=1;i<=10;i++)
 {
     console.log("5X"+i+"="+(i*number));
 }
+ //find max number
+ 
+ function max(a,b)
+ {
+    let max1=arguments[0];
+    for(let i=1;i<arguments.length;i++)
+    {
+        if(arguments[i]>max1)
+        {
+            max1=arguments[i];
+        }
+        
+    }
+    return max1;
+ }
+
+ let maximumnumber=max(50,60,100);
+ console.log("MAximum Number is "+maximumnumber);
+
+ // using for each loop to get the elements from an array
+
+ let a=[10,20,30,40];
+
+ a.forEach(function(fruit)
+{
+    console.log(fruit);
+})
+
+a.forEach((fruit) =>
+{
+   console.log(fruit);
+}
+)
+
+let result=a.map(function(num)
+{
+    return num*5;
+})
+console.log(result);
+
+a.forEach((num) =>
+{
+    console.log(num*5);
+})
+
+
+let b=[100,200,300];
+b.forEach(num =>
+{
+    if(num==200)
+        {
+    return num;
+        }
+        console.log(num);
+}
+)
+ 
  

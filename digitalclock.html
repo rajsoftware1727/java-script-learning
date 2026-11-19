@@ -1,0 +1,31 @@
+<html>
+    <head>Digital Clock</head>
+    <p id="demo"></p>
+    <body></body>
+    <script>
+            function showtime()
+              {
+                let session="AM";
+                  let x=new Date();
+                  let h=x.getHours();
+                  let m=x.getMinutes();
+                  let s=x.getSeconds();
+                   if(h>12)
+                  {
+                            session="PM";
+                  }
+
+                  h=(h<10) ? "0"+h:h;
+                   m=(m<10) ? "0"+m:m;
+                    s=(s<10) ? "0"+s:s;
+
+                  let time=h+":"+m+":"+s+"   "+session;
+
+                  
+              
+              document.getElementById("demo").innerHTML=time;
+              setTimeout(showtime,1000);
+              }
+              showtime();
+    </script>
+</html>

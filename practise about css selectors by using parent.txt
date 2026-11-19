@@ -1,0 +1,19 @@
+<div id="main">
+
+    <div id="login">
+        <label>Username</label>
+        <input type="text" id="user">
+
+        <label>Password</label>
+        <input type="password" id="pass">
+    </div>
+
+</div>
+
+
+<div id="languages">
+    <p>Java</p>
+    <p>JavaScript</p>
+    <p>Python</p>
+    <p>Playwright</p>
+</div>
