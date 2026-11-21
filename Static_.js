@@ -17,8 +17,17 @@ class Student
 
 
     }
+
+    static display1()
+    {
+        
+        console.log("school name is :"+ Student.schoolname)
+
+
+    }
 }
 
 let s1=new Student("Rajesh",100);
 
 s1.display();
+Student.display1();
